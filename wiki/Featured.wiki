@@ -1,0 +1,25 @@
+#labels Features
+= Features =
+Provide enhanced features for Safari web browser in Mac OS X environment. Currently it provides Chinese glyphs conversion for Traditional & Simplified.
+
+= Manual =
+== Installation ==
+   # Quit Safari or Shiira
+   # Unzip the zipped file
+   # Drag SafariPowerToy to ~/Library/InputManagers (If InputManagers was not existed, please create it)
+   # Restart Safari or Shiira
+
+== Uninstallation ==
+   # Quit Safari or Shiira
+   # Drag ~/Library/InputManagers/SafariPowerToy to Trash
+   # Remove ~/Library/Preferences/org.jclin.SafariPowerToy
+   # Restart Safari
+
+== Usage ==
+   # In Safari Menu “View” -> “SafariPowerToy” -> “Convert to Trad. Chinese” or “Convert to Simp. Chinese”
+
+== Hot Keys ==
+   * Cmd-Ctrl-F1: Pop up the chinese glyph setting dialog
+
+= Screenshots =
+[http://jclin.files.wordpress.com/2006/08/safaripowertoy015.png]
