@@ -1,0 +1,399 @@
+// !$*UTF8*$!
+{
+	089C1669FE841209C02AAC07 /* Project object */ = {
+		activeBuildConfigurationName = Release;
+		activeExecutable = B1AFE2550AA13ED7003E6190 /* Executable */;
+		activeTarget = 8D5B49AC048680CD000E48DA /* SafariPowerToy */;
+		addToTargets = (
+			8D5B49AC048680CD000E48DA /* SafariPowerToy */,
+		);
+		breakpoints = (
+			B10AA5780AA3C8210018B0BB /* NSStringExt.m:135 */,
+			B1860EFC0CF5070E007C4FA9 /* safari3_override.mm:88 */,
+			B1860FFE0CF5D6E4007C4FA9 /* safari3_override.mm:109 */,
+		);
+		breakpointsGroup = B18526B70AA13873002231EC /* XCBreakpointsBucket */;
+		codeSenseManager = B18525E50A9F2DCE002231EC /* Code sense */;
+		executables = (
+			B1AFE2550AA13ED7003E6190 /* Executable */,
+		);
+		perUserDictionary = {
+			"PBXConfiguration.PBXBreakpointsDataSource.v1:1CA1AED706398EBD00589147" = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXBreakpointsDataSource_BreakpointID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					20,
+					210,
+					20,
+					110,
+					109,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXBreakpointsDataSource_ActionID,
+					PBXBreakpointsDataSource_TypeID,
+					PBXBreakpointsDataSource_BreakpointID,
+					PBXBreakpointsDataSource_UseID,
+					PBXBreakpointsDataSource_LocationID,
+					PBXBreakpointsDataSource_ConditionID,
+					PBXBreakpointsDataSource_ContinueID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXErrorsWarningsDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXErrorsWarningsDataSource_LocationID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					300,
+					133,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXErrorsWarningsDataSource_TypeID,
+					PBXErrorsWarningsDataSource_MessageID,
+					PBXErrorsWarningsDataSource_LocationID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXExecutablesDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXExecutablesDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					22,
+					300,
+					131,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXExecutablesDataSource_ActiveFlagID,
+					PBXExecutablesDataSource_NameID,
+					PBXExecutablesDataSource_CommentsID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					191,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					200,
+					39,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 217384695;
+			PBXWorkspaceStateSaveDate = 217384695;
+		};
+		sourceControlManager = B18525E40A9F2DCE002231EC /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	089C167EFE841241C02AAC07 /* English */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {738, 451}}";
+			sepNavSelRange = "{80, 0}";
+			sepNavVisRect = "{{0, 0}, {738, 451}}";
+			sepNavWindowFrame = "{{314, 76}, {777, 524}}";
+		};
+	};
+	8D5B49AC048680CD000E48DA /* SafariPowerToy */ = {
+		activeExec = 0;
+	};
+	8D5B49B7048680CD000E48DA /* Info.plist */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {908, 459}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 0}, {738, 451}}";
+			sepNavWindowFrame = "{{291, 97}, {777, 524}}";
+		};
+	};
+	B10AA4B60AA33F6E0018B0BB /* NSStringExt.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {838, 528}}";
+			sepNavSelRange = "{576, 0}";
+			sepNavVisRect = "{{0, 0}, {838, 528}}";
+			sepNavWindowFrame = "{{320, 137}, {883, 601}}";
+		};
+	};
+	B10AA4B70AA33F6E0018B0BB /* NSStringExt.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1108, 2550}}";
+			sepNavSelRange = "{923, 33}";
+			sepNavVisRect = "{{0, 0}, {1108, 619}}";
+			sepNavWindowFrame = "{{130, 98}, {1153, 692}}";
+		};
+	};
+	B10AA5780AA3C8210018B0BB /* NSStringExt.m:135 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		delayBeforeContinue = 0;
+		fileReference = B10AA4B70AA33F6E0018B0BB /* NSStringExt.m */;
+		functionName = "-drawAtPoint_hack:withAttributes:";
+		hitCount = 1;
+		lineNumber = 135;
+		location = SafariPowerToy;
+		modificationTime = 217438007.75749;
+		state = 1;
+	};
+	B13316CE0B2BA5110026E689 /* WebBackForwardListExt.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {838, 528}}";
+			sepNavSelRange = "{220, 0}";
+			sepNavVisRect = "{{0, 0}, {838, 528}}";
+			sepNavWindowFrame = "{{120, 56}, {883, 601}}";
+		};
+	};
+	B13316CF0B2BA5110026E689 /* WebBackForwardListExt.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {838, 528}}";
+			sepNavSelRange = "{362, 0}";
+			sepNavVisRect = "{{0, 0}, {838, 528}}";
+			sepNavWindowFrame = "{{38, 119}, {883, 601}}";
+		};
+	};
+	B16434F10CF489E6001601EC /* mach_override.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1180, 10268}}";
+			sepNavSelRange = "{3768, 0}";
+			sepNavVisRect = "{{0, 2632}, {1088, 296}}";
+			sepNavWindowFrame = "{{38, 160}, {1153, 692}}";
+		};
+	};
+	B16435000CF48B1B001601EC /* safari3_override.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {952, 739}}";
+			sepNavSelRange = "{238, 0}";
+			sepNavVisRect = "{{0, 0}, {952, 739}}";
+			sepNavWindowFrame = "{{369, 34}, {997, 812}}";
+		};
+	};
+	B16435010CF48B1B001601EC /* safari3_override.mm */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1148, 2074}}";
+			sepNavSelRange = "{3218, 0}";
+			sepNavVisRect = "{{0, 1335}, {952, 739}}";
+			sepNavWindowFrame = "{{355, 51}, {997, 812}}";
+		};
+	};
+	B18525E40A9F2DCE002231EC /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+		scmType = "";
+	};
+	B18525E50A9F2DCE002231EC /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	B18525E70A9F2E05002231EC /* SafariPowerToy.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {732, 714}}";
+			sepNavSelRange = "{972, 0}";
+			sepNavVisRect = "{{0, 263}, {732, 451}}";
+			sepNavWindowFrame = "{{179, 267}, {777, 524}}";
+		};
+	};
+	B18525E80A9F2E05002231EC /* SafariPowerToy.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {900, 4505}}";
+			sepNavSelRange = "{3770, 0}";
+			sepNavVisRect = "{{0, 1737}, {781, 624}}";
+			sepNavWindowFrame = "{{379, 66}, {997, 812}}";
+		};
+	};
+	B18525ED0A9F2E6A002231EC /* MethodSwizzling.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {952, 739}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 0}, {952, 739}}";
+			sepNavWindowFrame = "{{15, 61}, {997, 812}}";
+		};
+	};
+	B18525EE0A9F2E6A002231EC /* MethodSwizzling.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {838, 544}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 0}, {838, 528}}";
+			sepNavWindowFrame = "{{61, 230}, {883, 601}}";
+		};
+	};
+	B18526670AA133C9002231EC /* char-map.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1108, 619}}";
+			sepNavSelRange = "{424, 0}";
+			sepNavVisRect = "{{0, 0}, {1108, 619}}";
+			sepNavWindowFrame = "{{61, 139}, {1153, 692}}";
+		};
+	};
+	B18526690AA133C9002231EC /* trad2simp.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1052, 2261}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 0}, {838, 528}}";
+			sepNavWindowFrame = "{{176, 125}, {883, 601}}";
+		};
+	};
+	B185268A0AA13507002231EC /* Info */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {732, 451}}";
+			sepNavSelRange = "{0, 425}";
+			sepNavVisRect = "{{0, 0}, {732, 451}}";
+			sepNavWindowFrame = "{{15, 222}, {777, 524}}";
+		};
+	};
+	B18526B70AA13873002231EC /* XCBreakpointsBucket */ = {
+		isa = XCBreakpointsBucket;
+		name = "Project Breakpoints";
+		objects = (
+			B10AA5780AA3C8210018B0BB /* NSStringExt.m:135 */,
+			B1860EFC0CF5070E007C4FA9 /* safari3_override.mm:88 */,
+			B1860FFE0CF5D6E4007C4FA9 /* safari3_override.mm:109 */,
+		);
+	};
+	B1860EFC0CF5070E007C4FA9 /* safari3_override.mm:88 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		delayBeforeContinue = 0;
+		fileReference = B16435010CF48B1B001601EC /* safari3_override.mm */;
+		functionName = "Font_drawSimpleText()";
+		hitCount = 1;
+		lineNumber = 88;
+		location = SafariPowerToy;
+		modificationTime = 217437989.352386;
+		state = 2;
+	};
+	B1860FFE0CF5D6E4007C4FA9 /* safari3_override.mm:109 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		delayBeforeContinue = 0;
+		fileReference = B16435010CF48B1B001601EC /* safari3_override.mm */;
+		functionName = "Get_Font_drawText_Addr()";
+		hitCount = 1;
+		lineNumber = 109;
+		location = SafariPowerToy;
+		modificationTime = 217438007.973452;
+		state = 1;
+	};
+	B1AFE2550AA13ED7003E6190 /* Executable */ = {
+		isa = PBXExecutable;
+		activeArgIndex = 2147483647;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		launchableReference = B1AFE2560AA13ED8003E6190 /* Safari.app */;
+		libgmallocEnabled = 0;
+		name = Executable;
+		savedGlobals = {
+		};
+		sourceDirectories = (
+		);
+		variableFormatDictionary = {
+			"_DOMHTMLDocument_domain-long unsigned int-GetFont_drawTextAddr" = 1;
+			"_Font_drawText-long unsigned int-GetFont_drawTextAddr" = 1;
+			"_loaded_DOMHTMLDocument_domain-long unsigned int-GetFont_drawTextAddr" = 1;
+			"ch-UniChar--[NSObject(SafariPowerToy) drawRun_hack:style:geometry:]" = 1;
+		};
+	};
+	B1AFE2560AA13ED8003E6190 /* Safari.app */ = {
+		isa = PBXFileReference;
+		explicitFileType = wrapper.application;
+		name = Safari.app;
+		path = /Applications/Safari.app;
+		sourceTree = "<absolute>";
+	};
+	B1AFE2EF0AA19A71003E6190 /* WebCoreTextRenderer.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1420, 1836}}";
+			sepNavSelRange = "{1886, 0}";
+			sepNavVisRect = "{{0, 1385}, {732, 451}}";
+			sepNavWindowFrame = "{{176, 202}, {777, 524}}";
+		};
+	};
+	B1AFE5280AA1DFD8003E6190 /* WebTextRendererExt.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1092, 544}}";
+			sepNavSelRange = "{498, 0}";
+			sepNavVisRect = "{{0, 0}, {838, 528}}";
+			sepNavWindowFrame = "{{337, 145}, {883, 601}}";
+		};
+	};
+	B1AFE5290AA1DFD8003E6190 /* WebTextRendererExt.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1084, 1071}}";
+			sepNavSelRange = "{1334, 0}";
+			sepNavVisRect = "{{0, 7}, {732, 451}}";
+			sepNavWindowFrame = "{{191, 250}, {777, 524}}";
+		};
+	};
+	B1B09C430AC2C24E0078CE68 /* NSURLRequestX.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {838, 528}}";
+			sepNavSelRange = "{216, 0}";
+			sepNavVisRect = "{{0, 0}, {838, 528}}";
+			sepNavWindowFrame = "{{15, 145}, {883, 601}}";
+		};
+	};
+	B1B09C440AC2C24E0078CE68 /* NSURLRequestX.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {852, 663}}";
+			sepNavSelRange = "{512, 0}";
+			sepNavVisRect = "{{0, 0}, {838, 528}}";
+			sepNavWindowFrame = "{{75, 56}, {883, 601}}";
+		};
+	};
+}

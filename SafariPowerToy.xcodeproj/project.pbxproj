@@ -1,0 +1,357 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+		B10AA4B90AA33F6E0018B0BB /* NSStringExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B10AA4B70AA33F6E0018B0BB /* NSStringExt.m */; };
+		B13316D00B2BA5110026E689 /* WebBackForwardListExt.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B13316CE0B2BA5110026E689 /* WebBackForwardListExt.h */; };
+		B13316D10B2BA5110026E689 /* WebBackForwardListExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B13316CF0B2BA5110026E689 /* WebBackForwardListExt.m */; };
+		B13A0A140AA32AF40007410E /* SafariPowerToy.nib in Resources */ = {isa = PBXBuildFile; fileRef = B13A0A130AA32AF40007410E /* SafariPowerToy.nib */; };
+		B16434F30CF489E6001601EC /* mach_override.c in Sources */ = {isa = PBXBuildFile; fileRef = B16434F10CF489E6001601EC /* mach_override.c */; };
+		B16434F40CF489E6001601EC /* mach_override.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B16434F20CF489E6001601EC /* mach_override.h */; };
+		B16435020CF48B1B001601EC /* safari3_override.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B16435000CF48B1B001601EC /* safari3_override.h */; };
+		B16435030CF48B1B001601EC /* safari3_override.mm in Sources */ = {isa = PBXBuildFile; fileRef = B16435010CF48B1B001601EC /* safari3_override.mm */; };
+		B18525E90A9F2E05002231EC /* SafariPowerToy.m in Sources */ = {isa = PBXBuildFile; fileRef = B18525E80A9F2E05002231EC /* SafariPowerToy.m */; };
+		B18525EF0A9F2E6A002231EC /* MethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = B18525EE0A9F2E6A002231EC /* MethodSwizzling.m */; };
+		B185266A0AA133C9002231EC /* simp2trad.c in Sources */ = {isa = PBXBuildFile; fileRef = B18526680AA133C9002231EC /* simp2trad.c */; };
+		B185266B0AA133C9002231EC /* trad2simp.c in Sources */ = {isa = PBXBuildFile; fileRef = B18526690AA133C9002231EC /* trad2simp.c */; };
+		B185268B0AA13507002231EC /* Info in CopyFiles */ = {isa = PBXBuildFile; fileRef = B185268A0AA13507002231EC /* Info */; };
+		B1AFE2160AA138F8003E6190 /* SafariPowerToy.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8D5B49B6048680CD000E48DA /* SafariPowerToy.bundle */; };
+		B1AFE2210AA1394C003E6190 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D5B49B7048680CD000E48DA /* Info.plist */; };
+		B1AFE37D0AA1A118003E6190 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1AFE37C0AA1A118003E6190 /* WebKit.framework */; };
+		B1AFE52B0AA1DFD8003E6190 /* WebTextRendererExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AFE5290AA1DFD8003E6190 /* WebTextRendererExt.m */; };
+		B1B09C450AC2C24E0078CE68 /* NSURLRequestX.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B1B09C430AC2C24E0078CE68 /* NSURLRequestX.h */; };
+		B1B09C460AC2C24E0078CE68 /* NSURLRequestX.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B09C440AC2C24E0078CE68 /* NSURLRequestX.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B185268E0AA13541002231EC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = SafariPowerToy;
+			dstSubfolderSpec = 16;
+			files = (
+				B1AFE2160AA138F8003E6190 /* SafariPowerToy.bundle in CopyFiles */,
+				B185268B0AA13507002231EC /* Info in CopyFiles */,
+				B1B09C450AC2C24E0078CE68 /* NSURLRequestX.h in CopyFiles */,
+				B13316D00B2BA5110026E689 /* WebBackForwardListExt.h in CopyFiles */,
+				B16434F40CF489E6001601EC /* mach_override.h in CopyFiles */,
+				B16435020CF48B1B001601EC /* safari3_override.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		32DBCF630370AF2F00C91783 /* SafariPowerToy_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafariPowerToy_Prefix.pch; sourceTree = "<group>"; };
+		8D5B49B6048680CD000E48DA /* SafariPowerToy.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SafariPowerToy.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Info.plist; sourceTree = "<group>"; };
+		B10AA4B60AA33F6E0018B0BB /* NSStringExt.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = NSStringExt.h; path = src/NSStringExt.h; sourceTree = "<group>"; };
+		B10AA4B70AA33F6E0018B0BB /* NSStringExt.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = NSStringExt.m; path = src/NSStringExt.m; sourceTree = "<group>"; };
+		B13316CE0B2BA5110026E689 /* WebBackForwardListExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebBackForwardListExt.h; sourceTree = "<group>"; };
+		B13316CF0B2BA5110026E689 /* WebBackForwardListExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebBackForwardListExt.m; sourceTree = "<group>"; };
+		B13A0A130AA32AF40007410E /* SafariPowerToy.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = SafariPowerToy.nib; path = src/SafariPowerToy.nib; sourceTree = "<group>"; };
+		B16434F10CF489E6001601EC /* mach_override.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = mach_override.c; sourceTree = "<group>"; };
+		B16434F20CF489E6001601EC /* mach_override.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = mach_override.h; sourceTree = "<group>"; };
+		B16435000CF48B1B001601EC /* safari3_override.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = safari3_override.h; sourceTree = "<group>"; };
+		B16435010CF48B1B001601EC /* safari3_override.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = safari3_override.mm; sourceTree = "<group>"; };
+		B18525E70A9F2E05002231EC /* SafariPowerToy.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SafariPowerToy.h; path = src/SafariPowerToy.h; sourceTree = "<group>"; };
+		B18525E80A9F2E05002231EC /* SafariPowerToy.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = SafariPowerToy.m; path = src/SafariPowerToy.m; sourceTree = "<group>"; };
+		B18525ED0A9F2E6A002231EC /* MethodSwizzling.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = MethodSwizzling.h; path = src/MethodSwizzling.h; sourceTree = "<group>"; };
+		B18525EE0A9F2E6A002231EC /* MethodSwizzling.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = MethodSwizzling.m; path = src/MethodSwizzling.m; sourceTree = "<group>"; };
+		B18526670AA133C9002231EC /* char-map.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = "char-map.h"; path = "char-map/char-map.h"; sourceTree = "<group>"; };
+		B18526680AA133C9002231EC /* simp2trad.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = simp2trad.c; path = "char-map/simp2trad.c"; sourceTree = "<group>"; };
+		B18526690AA133C9002231EC /* trad2simp.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = trad2simp.c; path = "char-map/trad2simp.c"; sourceTree = "<group>"; };
+		B185268A0AA13507002231EC /* Info */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; path = Info; sourceTree = "<group>"; };
+		B1AFE2EF0AA19A71003E6190 /* WebCoreTextRenderer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = WebCoreTextRenderer.h; path = src/WebCoreTextRenderer.h; sourceTree = "<group>"; };
+		B1AFE37C0AA1A118003E6190 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
+		B1AFE5280AA1DFD8003E6190 /* WebTextRendererExt.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = WebTextRendererExt.h; path = src/WebTextRendererExt.h; sourceTree = "<group>"; };
+		B1AFE5290AA1DFD8003E6190 /* WebTextRendererExt.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = WebTextRendererExt.m; path = src/WebTextRendererExt.m; sourceTree = "<group>"; };
+		B1B09C430AC2C24E0078CE68 /* NSURLRequestX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLRequestX.h; sourceTree = "<group>"; };
+		B1B09C440AC2C24E0078CE68 /* NSURLRequestX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLRequestX.m; sourceTree = "<group>"; };
+		D2F7E65807B2D6F200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D5B49B3048680CD000E48DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */,
+				B1AFE37D0AA1A118003E6190 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* SafariPowerToy */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AFFE84173DC02AAC07 /* Classes */,
+				32C88E010371C26100C91783 /* Other Sources */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
+				19C28FB8FE9D52D311CA2CBB /* Products */,
+			);
+			name = SafariPowerToy;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,
+				1058C7AEFEA557BF11CA2CBB /* Other Frameworks */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B13A0A130AA32AF40007410E /* SafariPowerToy.nib */,
+				B185268A0AA13507002231EC /* Info */,
+				8D5B49B7048680CD000E48DA /* Info.plist */,
+				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B10AA4B60AA33F6E0018B0BB /* NSStringExt.h */,
+				B10AA4B70AA33F6E0018B0BB /* NSStringExt.m */,
+				B1AFE5280AA1DFD8003E6190 /* WebTextRendererExt.h */,
+				B1AFE5290AA1DFD8003E6190 /* WebTextRendererExt.m */,
+				B1AFE2EF0AA19A71003E6190 /* WebCoreTextRenderer.h */,
+				B18526670AA133C9002231EC /* char-map.h */,
+				B18526680AA133C9002231EC /* simp2trad.c */,
+				B18526690AA133C9002231EC /* trad2simp.c */,
+				B18525ED0A9F2E6A002231EC /* MethodSwizzling.h */,
+				B18525EE0A9F2E6A002231EC /* MethodSwizzling.m */,
+				B18525E70A9F2E05002231EC /* SafariPowerToy.h */,
+				B18525E80A9F2E05002231EC /* SafariPowerToy.m */,
+				B16435000CF48B1B001601EC /* safari3_override.h */,
+				B16435010CF48B1B001601EC /* safari3_override.mm */,
+				B16434F10CF489E6001601EC /* mach_override.c */,
+				B16434F20CF489E6001601EC /* mach_override.h */,
+				B13316CE0B2BA5110026E689 /* WebBackForwardListExt.h */,
+				B13316CF0B2BA5110026E689 /* WebBackForwardListExt.m */,
+				B1B09C430AC2C24E0078CE68 /* NSURLRequestX.h */,
+				B1B09C440AC2C24E0078CE68 /* NSURLRequestX.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1AFE37C0AA1A118003E6190 /* WebKit.framework */,
+				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7AEFEA557BF11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				089C167FFE841241C02AAC07 /* AppKit.framework */,
+				D2F7E65807B2D6F200F64583 /* CoreData.framework */,
+				089C1672FE841209C02AAC07 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B49B6048680CD000E48DA /* SafariPowerToy.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32C88E010371C26100C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF630370AF2F00C91783 /* SafariPowerToy_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D5B49AC048680CD000E48DA /* SafariPowerToy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "SafariPowerToy" */;
+			buildPhases = (
+				8D5B49AF048680CD000E48DA /* Resources */,
+				8D5B49B1048680CD000E48DA /* Sources */,
+				8D5B49B3048680CD000E48DA /* Frameworks */,
+				B185268E0AA13541002231EC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SafariPowerToy;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = SafariPowerToy;
+			productReference = 8D5B49B6048680CD000E48DA /* SafariPowerToy.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "SafariPowerToy" */;
+			hasScannedForEncodings = 1;
+			mainGroup = 089C166AFE841209C02AAC07 /* SafariPowerToy */;
+			projectDirPath = "";
+			targets = (
+				8D5B49AC048680CD000E48DA /* SafariPowerToy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D5B49AF048680CD000E48DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1AFE2210AA1394C003E6190 /* Info.plist in Resources */,
+				8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */,
+				B13A0A140AA32AF40007410E /* SafariPowerToy.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D5B49B1048680CD000E48DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B18525E90A9F2E05002231EC /* SafariPowerToy.m in Sources */,
+				B18525EF0A9F2E6A002231EC /* MethodSwizzling.m in Sources */,
+				B185266A0AA133C9002231EC /* simp2trad.c in Sources */,
+				B185266B0AA133C9002231EC /* trad2simp.c in Sources */,
+				B1AFE52B0AA1DFD8003E6190 /* WebTextRendererExt.m in Sources */,
+				B10AA4B90AA33F6E0018B0BB /* NSStringExt.m in Sources */,
+				B1B09C460AC2C24E0078CE68 /* NSURLRequestX.m in Sources */,
+				B13316D10B2BA5110026E689 /* WebBackForwardListExt.m in Sources */,
+				B16434F30CF489E6001601EC /* mach_override.c in Sources */,
+				B16435030CF48B1B001601EC /* safari3_override.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C167EFE841241C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB913B08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_GC = YES;
+				GCC_FAST_OBJC_DISPATCH = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SafariPowerToy_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				PRODUCT_NAME = SafariPowerToy;
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		1DEB913C08733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = ppc;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SafariPowerToy_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				PRODUCT_NAME = SafariPowerToy;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		1DEB913F08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_USE_GCC3_PFE_SUPPORT = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Debug;
+		};
+		1DEB914008733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_USE_GCC3_PFE_SUPPORT = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "SafariPowerToy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913B08733D840010E9CD /* Debug */,
+				1DEB913C08733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "SafariPowerToy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913F08733D840010E9CD /* Debug */,
+				1DEB914008733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}
