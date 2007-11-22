@@ -2,6 +2,13 @@
 = Features =
 Provide enhanced features for Safari web browser in Mac OS X environment. Currently it provides Chinese glyphs conversion for Traditional & Simplified.
 
+= License =
+BSD License
+
+= 3rd Party sources =
+  # [http://rentzsch.com/mach_override/ mach_override]
+  # [http://webkit.org/ WebKit]
+
 = Manual =
 == Installation ==
    # Quit Safari or Shiira
