@@ -1,0 +1,33 @@
+= Manual =
+
+== 10.4 Tiger ==
+=== Installation ===
+   # Quit Safari or Shiira
+   # Unzip the archived file
+   # Drag SafariPowerToy to ~/Library/InputManagers (If InputManagers was not existed, please create it)
+   # Restart Safari or Shiira
+
+== Uninstallation ==
+   # Quit Safari or Shiira
+   # Drag ~/Library/InputManagers/SafariPowerToy to Trash
+   # Remove ~/Library/Preferences/org.jclin.SafariPowerToy
+   # Restart Safari
+
+== 10.5 Leopard ==
+=== Installation ===
+   # Quit Safari or Shiira
+   # Unzip the archived file
+   # run Termila.app
+   # sudo mkdir -p /Library/InputManagers if it does not exist
+   # sudo cp -R SafariPowerToy /Library/InputManagers
+
+=== Uninstallation ===
+   # Quit Safari or Shiira
+   # sudo rm -rf /Library/InputManagers/SafariPowerToy
+   # Restart Safari
+
+== Usage ==
+   # In Safari Menu “View” -> “SafariPowerToy” -> “Convert to Trad. Chinese” or “Convert to Simp. Chinese”
+
+== Hot Keys ==
+   * Cmd-Ctrl-F1: Pop up the chinese glyph setting dialog
