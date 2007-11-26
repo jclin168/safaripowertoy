@@ -1,4 +1,5 @@
-#import </usr/include/objc/objc-class.h>
+#import <objc/objc.h>
+#import <objc/objc-runtime.h>
 #import "MethodSwizzling.h"
 
 // lifted from: http://www.cocoadev.com/index.pl?MethodSwizzling
@@ -14,6 +15,8 @@ int MethodSwizzle(Class aClass, SEL orig_sel, SEL alt_sel)
     // If both are found, swizzle them
     if ((orig_method != nil) && (alt_method != nil))
     {
+		method_exchangeImplementations( orig_method, alt_method );
+	/*
         char *temp1;
         IMP temp2;
 
@@ -24,7 +27,7 @@ int MethodSwizzle(Class aClass, SEL orig_sel, SEL alt_sel)
         temp2 = orig_method->method_imp;
         orig_method->method_imp = alt_method->method_imp;
         alt_method->method_imp = temp2;
-	
+	*/
 	return 0;
     }
     // error
