@@ -9,13 +9,15 @@
 //   11/21/2007 by jclin:
 //         Using mach_override for Safari 3 in 10.4.11
 
-
+#import <Cocoa/Cocoa.h>
+#import <objc/objc.h>
+#import <objc/objc-runtime.h>
+#import <WebKit/WebKit.h>
 #import "SafariPowerToy.h"
 #import "safari3_override.h"
 #import "mach_override.h"
 #import "char-map/char-map.h"
 #import "WebTextRendererExt.h"
-#import "WebKit/WebKit.h"
 
 typedef unsigned short	UChar;
 
@@ -72,7 +74,6 @@ struct TextRun {
 // C++ member function prototype to C-style
 //  1. artificial parameter in the first one is Font *
 //  2. view references as pointers
-static void * ptrFont_drawText = (void*)0x95f3c010;
 typedef void (*Font_drawText_Proc)(void*, void*, void*, void*, void*, int, int );
 
 static Font_drawText_Proc gReentry_Font_drawText = NULL;
@@ -102,12 +103,24 @@ void Font_drawText( void* font, void* context, TextRun* run, void* style, void* 
 @class WebCoreViewFactory;
 static void* Get_Font_drawText_Addr()
 {
+#ifdef MAC_OS_X_VERSION_10_5
+	const unsigned long _orig_Font_drawText = 0x10f9d0;
+	const unsigned long _orig_WebCoreViewFactory_sharedFactory = 0xb460;
+	const unsigned long diff = _orig_Font_drawText - _orig_WebCoreViewFactory_sharedFactory;
+	Method method = class_getClassMethod(NSClassFromString( @"WebCoreViewFactory"), 
+	                                                        @selector(sharedFactory));
+
+	unsigned long _now_WebCoreViewFactory_sharedFactory = (unsigned long)method_getImplementation(method);
+	//unsigned long _now_WebCoreViewFactory_sharedFactory = (unsigned long) \
+	    class_getMethodImplementation_stret( NSClassFromString(@"WebCoreViewFactory"), \
+		                               @selector(sharedFactory));
+#else if defined(MAC_OS_X_VERSION_10_4)
 	const unsigned long _orig_Font_drawText = 0x95f3c010;
 	const unsigned long _orig_WebCoreViewFactory_sharedFactory = 0x95e3e9a0;
 	const unsigned long diff = _orig_Font_drawText - _orig_WebCoreViewFactory_sharedFactory;
-	
 	unsigned long _now_WebCoreViewFactory_sharedFactory = (unsigned long) \
 		[WebCoreViewFactory methodFor:@selector(sharedFactory)];
+#endif
 	
 	if( _now_WebCoreViewFactory_sharedFactory == 0 )
 		return (void *)_orig_Font_drawText;
@@ -120,7 +133,10 @@ int Safari3_Override()
 	if( bInit == YES )
 		return 0;
 	
-	kern_return_t err = mach_override_ptr( Get_Font_drawText_Addr(),
+	void * ptr = Get_Font_drawText_Addr();
+	if( NULL == ptr )
+		return -1;
+	kern_return_t err = mach_override_ptr( ptr,
 										   (void*)&Font_drawText,
 										   (void**)&gReentry_Font_drawText );
 	bInit = YES;
