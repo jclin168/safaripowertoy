@@ -1,33 +1,58 @@
-= Manual =
+#labels Usage
+= Manual/手冊 =
 
-== 10.4 Tiger ==
-=== Installation ===
+== 10.4 Tiger/老虎 ==
+=== Installation/安裝 ===
    # Quit Safari or Shiira
    # Unzip the archived file
    # Drag SafariPowerToy to ~/Library/InputManagers (If InputManagers was not existed, please create it)
    # Restart Safari or Shiira
 
-== Uninstallation ==
+   # 完全離開 Safari 或 Shiira
+   # 解開壓縮的檔案
+   # 將 SafariPowerToy 拉到 ~/Library/InputManagers (如果 InputManagers 不存在，請建立這個目錄）
+   # 開啟 Safari 或 Shiira
+
+== Uninstallation/解除安裝 ==
    # Quit Safari or Shiira
    # Drag ~/Library/InputManagers/SafariPowerToy to Trash
    # Remove ~/Library/Preferences/org.jclin.SafariPowerToy
    # Restart Safari
 
-== 10.5 Leopard ==
-=== Installation ===
+   # 完全離開 Safari 或 Shiira
+   # 將 ~/Library/InputManagers 下的 SafariPowerToy 刪除
+   # 刪除 ~/Library/Preferences/org.jclin.SafariPowerToy
+   # 開啟 Safari
+
+== 10.5 Leopard/美洲豹 ==
+=== Installation/安裝 ===
    # Quit Safari or Shiira
    # Unzip the archived file
    # run Termila.app
    # sudo mkdir -p /Library/InputManagers if it does not exist
    # sudo cp -R SafariPowerToy /Library/InputManagers
 
-=== Uninstallation ===
+   # 完全離開 Safari 或 Shiira
+   # 解開壓縮的檔案
+   # 執行終端機程式 Terminal.app (如果你有安裝過 InputManagers 像是，應該可以略過 4,5,6)
+   # 執行 sudo mkdir -p /Library/InputManagers 如果這個目錄不存在的話 (可能需要輸入你的密碼)
+   # 執行 sudo cp -R SafariPowerToy /Library/InputManagers
+   # 開啟 Safari 或 Shiira
+
+=== Uninstallation/解除安裝 ===
    # Quit Safari or Shiira
    # sudo rm -rf /Library/InputManagers/SafariPowerToy
    # Restart Safari
 
-== Usage ==
-   # In Safari Menu “View” -> “SafariPowerToy” -> “Convert to Trad. Chinese” or “Convert to Simp. Chinese”
+   # 完全離開 Safari 或 Shiira
+   # 開啟終端機程式 Terminal.app
+   # 執行 sudo rm -rf /Library/InputManagers/SafariPowerToy  (可能需要輸入你的密碼)
+   # 開啟 Safari
 
-== Hot Keys ==
+== Usage/使用方法 ==
+   * In Safari Menu “View” -> “SafariPowerToy” -> “Convert to Trad. Chinese” or “Convert to Simp. Chinese”
+   * 在 Safari 的 View 選單下，會多出 SafariPowerToy 項目。
+
+== Hot Keys/快速熱鍵 ==
    * Cmd-Ctrl-F1: Pop up the chinese glyph setting dialog
+   * Cmd-Ctrl-F1: 跳出中文字型轉換設定
