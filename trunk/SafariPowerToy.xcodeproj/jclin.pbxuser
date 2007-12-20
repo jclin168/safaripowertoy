@@ -11,7 +11,7 @@
 		breakpoints = (
 			B10AA5780AA3C8210018B0BB /* NSStringExt.m:135 */,
 			B1860EFC0CF5070E007C4FA9 /* safari3_override.mm:89 */,
-			B1860FFE0CF5D6E4007C4FA9 /* safari3_override.mm:121 */,
+			B1860FFE0CF5D6E4007C4FA9 /* safari3_override.mm:151 */,
 		);
 		codeSenseManager = B18525E50A9F2DCE002231EC /* Code sense */;
 		executables = (
@@ -112,12 +112,12 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 217776992;
-			PBXWorkspaceStateSaveDate = 217776992;
+			PBXPerProjectTemplateStateSaveDate = 219849352;
+			PBXWorkspaceStateSaveDate = 219849352;
 		};
 		perUserProjectItems = {
-			B11737460CFB077B002848B0 /* PBXTextBookmark */ = B11737460CFB077B002848B0 /* PBXTextBookmark */;
-			B11737540CFB09B8002848B0 /* PBXTextBookmark */ = B11737540CFB09B8002848B0 /* PBXTextBookmark */;
+			B12C2EBC0D19893E0074637F /* PBXTextBookmark */ = B12C2EBC0D19893E0074637F /* PBXTextBookmark */;
+			B12FA7360D1AA41B000D5F4C /* PBXTextBookmark */ = B12FA7360D1AA41B000D5F4C /* PBXTextBookmark */;
 		};
 		sourceControlManager = B18525E40A9F2DCE002231EC /* Source Control */;
 		userBuildSettings = {
@@ -168,30 +168,32 @@
 		delayBeforeContinue = 0;
 		fileReference = B10AA4B70AA33F6E0018B0BB /* NSStringExt.m */;
 		functionName = "-drawAtPoint_hack:withAttributes:";
-		hitCount = 1;
+		hitCount = 0;
 		ignoreCount = 0;
 		lineNumber = 135;
 		location = SafariPowerToy;
-		modificationTime = 217438007.75749;
-		state = 1;
+		modificationTime = 219776969.731012;
+		state = 0;
 	};
-	B11737460CFB077B002848B0 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		comments = "warning: 'ptrFont_drawText' defined but not used";
-		fRef = B16435010CF48B1B001601EC /* safari3_override.mm */;
-		rLen = 1;
-		rLoc = 76;
-		rType = 1;
-	};
-	B11737540CFB09B8002848B0 /* PBXTextBookmark */ = {
+	B12C2EBC0D19893E0074637F /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = B16435010CF48B1B001601EC /* safari3_override.mm */;
-		name = "safari3_override.mm: 1";
+		name = "safari3_override.mm: 123";
 		rLen = 0;
-		rLoc = 0;
+		rLoc = 3406;
 		rType = 0;
-		vrLen = 1036;
-		vrLoc = 0;
+		vrLen = 1795;
+		vrLoc = 2885;
+	};
+	B12FA7360D1AA41B000D5F4C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B16435010CF48B1B001601EC /* safari3_override.mm */;
+		name = "safari3_override.mm: 123";
+		rLen = 0;
+		rLoc = 3406;
+		rType = 0;
+		vrLen = 1638;
+		vrLoc = 2873;
 	};
 	B13316CE0B2BA5110026E689 /* WebBackForwardListExt.h */ = {
 		uiCtxt = {
@@ -211,9 +213,9 @@
 	};
 	B16434F10CF489E6001601EC /* mach_override.c */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1094, 10637}}";
-			sepNavSelRange = "{3046, 0}";
-			sepNavVisRange = "{2208, 799}";
+			sepNavIntBoundsRect = "{{0, 0}, {1094, 10710}}";
+			sepNavSelRange = "{3248, 0}";
+			sepNavVisRange = "{3182, 916}";
 			sepNavVisRect = "{{0, 2632}, {1088, 296}}";
 			sepNavWindowFrame = "{{38, 160}, {1153, 692}}";
 		};
@@ -228,11 +230,11 @@
 	};
 	B16435010CF48B1B001601EC /* safari3_override.mm */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1136, 2465}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 1036}";
+			sepNavIntBoundsRect = "{{0, 0}, {1136, 2877}}";
+			sepNavSelRange = "{3406, 0}";
+			sepNavVisRange = "{2873, 1733}";
 			sepNavVisRect = "{{0, 1335}, {952, 739}}";
-			sepNavWindowFrame = "{{355, 51}, {997, 812}}";
+			sepNavWindowFrame = "{{273, 38}, {997, 812}}";
 		};
 	};
 	B18525E40A9F2DCE002231EC /* Source Control */ = {
@@ -258,8 +260,8 @@
 	B18525E80A9F2E05002231EC /* SafariPowerToy.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {938, 4233}}";
-			sepNavSelRange = "{4764, 0}";
-			sepNavVisRange = "{3120, 1674}";
+			sepNavSelRange = "{3250, 0}";
+			sepNavVisRange = "{2927, 1432}";
 			sepNavVisRect = "{{0, 1737}, {781, 624}}";
 			sepNavWindowFrame = "{{379, 66}, {997, 812}}";
 		};
@@ -274,11 +276,11 @@
 	};
 	B18525EE0A9F2E6A002231EC /* MethodSwizzling.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {824, 595}}";
-			sepNavSelRange = "{610, 0}";
-			sepNavVisRange = "{81, 896}";
+			sepNavIntBoundsRect = "{{0, 0}, {1035, 663}}";
+			sepNavSelRange = "{790, 0}";
+			sepNavVisRange = "{81, 922}";
 			sepNavVisRect = "{{0, 0}, {838, 528}}";
-			sepNavWindowFrame = "{{338, 233}, {883, 601}}";
+			sepNavWindowFrame = "{{47, 123}, {1094, 743}}";
 		};
 	};
 	B18526670AA133C9002231EC /* char-map.h */ = {
@@ -315,14 +317,14 @@
 		delayBeforeContinue = 0;
 		fileReference = B16435010CF48B1B001601EC /* safari3_override.mm */;
 		functionName = "Font_drawSimpleText()";
-		hitCount = 1;
+		hitCount = 0;
 		ignoreCount = 0;
 		lineNumber = 89;
 		location = SafariPowerToy;
-		modificationTime = 217437989.352386;
+		modificationTime = 219776967.640819;
 		state = 2;
 	};
-	B1860FFE0CF5D6E4007C4FA9 /* safari3_override.mm:121 */ = {
+	B1860FFE0CF5D6E4007C4FA9 /* safari3_override.mm:151 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -332,12 +334,12 @@
 		delayBeforeContinue = 0;
 		fileReference = B16435010CF48B1B001601EC /* safari3_override.mm */;
 		functionName = "Get_Font_drawText_Addr()";
-		hitCount = 1;
+		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 121;
+		lineNumber = 151;
 		location = SafariPowerToy;
-		modificationTime = 217438007.973452;
-		state = 1;
+		modificationTime = 219776969.862437;
+		state = 0;
 	};
 	B1AFE2550AA13ED7003E6190 /* Executable */ = {
 		isa = PBXExecutable;

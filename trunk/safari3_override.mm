@@ -100,12 +100,42 @@ void Font_drawText( void* font, void* context, TextRun* run, void* style, void* 
 	}
 }
 
+extern BOOL IsObjC2;
+
 @class WebCoreViewFactory;
 static void* Get_Font_drawText_Addr()
 {
+	unsigned long _now_WebCoreViewFactory_sharedFactory = 0;
+	if( IsObjC2 == NO ) {
+		// 10.4.x
+		_now_WebCoreViewFactory_sharedFactory = (unsigned long) [WebCoreViewFactory methodFor:@selector(sharedFactory)];
+	}
+	else {
+		// 10.5.x
+		Method method = class_getClassMethod(NSClassFromString( @"WebCoreViewFactory"), 
+																@selector(sharedFactory));
+
+		_now_WebCoreViewFactory_sharedFactory = (unsigned long)method_getImplementation(method);
+	}
+	if( 0 == _now_WebCoreViewFactory_sharedFactory )
+		return NULL;
+	unsigned long addr_len = 0;
+	unsigned long test_addr = _now_WebCoreViewFactory_sharedFactory + 4;
+	const unsigned char _code_Font_drawText[] = "\x7c\x08\x02\xa6\x2f\x89\xff\xff";
+	while( addr_len < 0x200000 ) {
+		addr_len += 4;
+		test_addr += 4;
+		if( memcmp( (void*)test_addr, _code_Font_drawText, 8 ) == 0 )
+			return (void*)test_addr;
+	}
+	
+	return NULL;
+
+#if 0
 #ifdef MAC_OS_X_VERSION_10_5
-	const unsigned long _orig_Font_drawText = 0x10f9d0;
-	const unsigned long _orig_WebCoreViewFactory_sharedFactory = 0xb460;
+	const unsigned char _code_Font_drawText[] = "\x7c\x08\x02\xa6\x2f\x89\xff\xff";
+	const unsigned long _orig_Font_drawText = 0x10f9d0; // 0x10f050
+	const unsigned long _orig_WebCoreViewFactory_sharedFactory = 0xb460;	// 0xaf40
 	const unsigned long diff = _orig_Font_drawText - _orig_WebCoreViewFactory_sharedFactory;
 	Method method = class_getClassMethod(NSClassFromString( @"WebCoreViewFactory"), 
 	                                                        @selector(sharedFactory));
@@ -121,10 +151,8 @@ static void* Get_Font_drawText_Addr()
 	unsigned long _now_WebCoreViewFactory_sharedFactory = (unsigned long) \
 		[WebCoreViewFactory methodFor:@selector(sharedFactory)];
 #endif
-	
-	if( _now_WebCoreViewFactory_sharedFactory == 0 )
-		return (void *)_orig_Font_drawText;
-	return (void*)( diff + _now_WebCoreViewFactory_sharedFactory );
+#endif
+	return NULL;
 }
 
 int Safari3_Override()

@@ -1,4 +1,5 @@
 #!/usr/bin/perl
+use URI::Escape;
 
 open fs, "< simp.txt";
 open ft, "< trad.txt";
@@ -29,7 +30,12 @@ for( $idx = 0; $idx < $lt; $idx++ ) {
   $ct =~ s/(..)(..)/\\x\1\\x\2/;
   $cs =~ s/(..)(..)/\\x\1\\x\2/;
   if( $ct ne '' && $cs ne '' ) {
-    print s2t "\"$cs\", \"$ct\"\n";
+    if ($cs eq '\x65\x97' || $cs eq '\x53\xea' ) {
+      # no translate
+    }
+    else {
+      print s2t "\"$cs\", \"$ct\"\n";
+    }
     print t2s "\"$ct\", \"$cs\"\n";
   }
 }
