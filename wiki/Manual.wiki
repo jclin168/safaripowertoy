@@ -34,7 +34,7 @@
 
    # 完全離開 Safari 或 Shiira
    # 解開壓縮的檔案
-   # 執行終端機程式 Terminal.app (如果你有安裝過 InputManagers 像是，應該可以略過 4,5,6)
+   # 執行終端機程式 Terminal.app (如果你有安裝過 InputManagers 像是，應該可以略過 4)
    # 執行 sudo mkdir -p /Library/InputManagers 如果這個目錄不存在的話 (可能需要輸入你的密碼)
    # 執行 sudo cp -R SafariPowerToy /Library/InputManagers
    # 開啟 Safari 或 Shiira
