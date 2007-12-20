@@ -83,9 +83,12 @@ extern int gPageCacheSize;
 			[identifier isEqualToString:SHIIRA_IDENTIFIER]);
 }
 
+BOOL IsObjC2 = NO;
 -(void)awakeFromNib
 {
 	NSLog(@"awakeFromNib was called.");
+	if( [NSObject respondsToSelector:@selector(methodFor)] == NO )
+		IsObjC2 = YES;
 	
 	[SafariPowerToyMenu setTitle:@"SafariPowerToy"];
 	id menuItem = [[[NSMenuItem alloc] initWithTitle:@"SafariPowerToy"
