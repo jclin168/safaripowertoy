@@ -37,14 +37,25 @@ BOOL ConvertNSString( NSString * aString, NSString ** dst )
 	[aString getCharacters:buf];
 	
 	const struct char_map_s * ch_map = NULL;
+	char ch[2];
 	for( i = 0; i < nLen; i++ )
 	{
 		if( buf[i] <= 0xff )
 			continue;
-		if( eTraditional == glyph_status )
+#if defined(__ppc__) || defined(__POWERPC__)
+		if( glyph_status == eTraditional )
 			ch_map = simp2trad_lookup( (char *)&buf[i], 2 );
 		else
 			ch_map = trad2simp_lookup( (char *)&buf[i], 2 );
+#endif
+#if defined(__i386__)
+		ch[0] = (buf[i]>>8) & 0xff;
+		ch[1] = buf[i] & 0xff;
+		if( eTraditional == glyph_status )
+			ch_map = simp2trad_lookup( (char *)ch, 2 );
+		else
+			ch_map = trad2simp_lookup( (char *)ch, 2 );
+#endif
 		if( ch_map != NULL )
 			break;
 	}
@@ -54,10 +65,14 @@ BOOL ConvertNSString( NSString * aString, NSString ** dst )
 	
 	while( TRUE )
 	{
-		if( ch_map != NULL )
-		{
-			const unichar * ch = (unichar *)(ch_map->dst);
+		if( ch_map != NULL ) {
+#if defined(__ppc__) || defined(__POWERPC__)
+			const UChar * ch = (UChar *)(ch_map->dst);
 			buf[i] = *ch;
+#endif
+#if defined(__i386__)
+			buf[i] = (((unichar)ch_map->dst[0]) << 8) | (ch_map->dst[1] & 0xff);
+#endif
 		}
 		ch_map = NULL;
 		i++;
@@ -65,13 +80,24 @@ BOOL ConvertNSString( NSString * aString, NSString ** dst )
 			break;
 		if( buf[i] <= 0xff )
 			continue;
+#if defined(__ppc__) || defined(__POWERPC__)
 		if( eTraditional == glyph_status )
 			ch_map = simp2trad_lookup( (char *)&buf[i], 2 );
 		else
-			ch_map = trad2simp_lookup( (char *)&buf[i], 2 );
+			ch_map = trad2simp_lookup( (char *)&buf[i], 2 );		
+#endif
+#if defined(__i386__)
+		ch[0] = (buf[i]>>8) & 0xff;
+		ch[1] = buf[i] & 0xff;
+		if( eTraditional == glyph_status )
+			ch_map = simp2trad_lookup( (char *)ch, 2 );
+		else
+			ch_map = trad2simp_lookup( (char *)ch, 2 );
+#endif
 	}
 	
-	*dst = [[NSString alloc] initWithCharacters:buf length:nLen];
+	*dst = [[[NSString alloc] initWithCharacters:buf length:nLen] autorelease];
+	[*dst retain];
 	return TRUE;
 }
 //=========================================================================================

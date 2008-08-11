@@ -1,7 +1,6 @@
 // !$*UTF8*$!
 {
 	089C1669FE841209C02AAC07 /* Project object */ = {
-		activeArchitecture = ppc;
 		activeBuildConfigurationName = Release;
 		activeExecutable = B1AFE2550AA13ED7003E6190 /* Executable */;
 		activeTarget = 8D5B49AC048680CD000E48DA /* SafariPowerToy */;
@@ -9,9 +8,8 @@
 			8D5B49AC048680CD000E48DA /* SafariPowerToy */,
 		);
 		breakpoints = (
-			B10AA5780AA3C8210018B0BB /* NSStringExt.m:135 */,
-			B1860EFC0CF5070E007C4FA9 /* safari3_override.mm:89 */,
-			B1860FFE0CF5D6E4007C4FA9 /* safari3_override.mm:151 */,
+			B10AA5780AA3C8210018B0BB /* NSStringExt.m:161 */,
+			B1860FFE0CF5D6E4007C4FA9 /* safari3_override.mm:180 */,
 		);
 		codeSenseManager = B18525E50A9F2DCE002231EC /* Code sense */;
 		executables = (
@@ -112,12 +110,16 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 219849352;
-			PBXWorkspaceStateSaveDate = 219849352;
+			PBXPerProjectTemplateStateSaveDate = 240163816;
+			PBXWorkspaceStateSaveDate = 240163816;
 		};
 		perUserProjectItems = {
-			B12C2EBC0D19893E0074637F /* PBXTextBookmark */ = B12C2EBC0D19893E0074637F /* PBXTextBookmark */;
-			B12FA7360D1AA41B000D5F4C /* PBXTextBookmark */ = B12FA7360D1AA41B000D5F4C /* PBXTextBookmark */;
+			B12CE4950E507D800052F2BB /* PBXTextBookmark */ = B12CE4950E507D800052F2BB /* PBXTextBookmark */;
+			B12CE4970E507D800052F2BB /* PBXTextBookmark */ = B12CE4970E507D800052F2BB /* PBXTextBookmark */;
+			B12CE4E80E508DF60052F2BB /* PBXTextBookmark */ = B12CE4E80E508DF60052F2BB /* PBXTextBookmark */;
+			B12CE4E90E508DF60052F2BB /* PBXTextBookmark */ = B12CE4E90E508DF60052F2BB /* PBXTextBookmark */;
+			B1328DF60E509BF50026ED47 /* PBXTextBookmark */ = B1328DF60E509BF50026ED47 /* PBXTextBookmark */;
+			B1328DF70E509BF50026ED47 /* PBXTextBookmark */ = B1328DF70E509BF50026ED47 /* PBXTextBookmark */;
 		};
 		sourceControlManager = B18525E40A9F2DCE002231EC /* Source Control */;
 		userBuildSettings = {
@@ -152,13 +154,14 @@
 	};
 	B10AA4B70AA33F6E0018B0BB /* NSStringExt.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1108, 2550}}";
-			sepNavSelRange = "{923, 33}";
+			sepNavIntBoundsRect = "{{0, 0}, {1094, 2924}}";
+			sepNavSelRange = "{2770, 0}";
+			sepNavVisRange = "{2150, 915}";
 			sepNavVisRect = "{{0, 0}, {1108, 619}}";
-			sepNavWindowFrame = "{{130, 98}, {1153, 692}}";
+			sepNavWindowFrame = "{{168, 108}, {1153, 692}}";
 		};
 	};
-	B10AA5780AA3C8210018B0BB /* NSStringExt.m:135 */ = {
+	B10AA5780AA3C8210018B0BB /* NSStringExt.m:161 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -170,30 +173,70 @@
 		functionName = "-drawAtPoint_hack:withAttributes:";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 135;
+		lineNumber = 161;
 		location = SafariPowerToy;
 		modificationTime = 219776969.731012;
 		state = 0;
 	};
-	B12C2EBC0D19893E0074637F /* PBXTextBookmark */ = {
+	B12CE4950E507D800052F2BB /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = B16435010CF48B1B001601EC /* safari3_override.mm */;
-		name = "safari3_override.mm: 123";
+		fRef = B18526690AA133C9002231EC /* trad2simp.c */;
+		name = "trad2simp.c: 1";
 		rLen = 0;
-		rLoc = 3406;
+		rLoc = 0;
 		rType = 0;
-		vrLen = 1795;
-		vrLoc = 2885;
+		vrLen = 0;
+		vrLoc = 0;
 	};
-	B12FA7360D1AA41B000D5F4C /* PBXTextBookmark */ = {
+	B12CE4970E507D800052F2BB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B18526690AA133C9002231EC /* trad2simp.c */;
+		name = "trad2simp.c: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	B12CE4E80E508DF60052F2BB /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = B16435010CF48B1B001601EC /* safari3_override.mm */;
-		name = "safari3_override.mm: 123";
-		rLen = 0;
-		rLoc = 3406;
+		name = "safari3_override.mm: 313";
+		rLen = 2;
+		rLoc = 8801;
 		rType = 0;
-		vrLen = 1638;
-		vrLoc = 2873;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	B12CE4E90E508DF60052F2BB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B16435010CF48B1B001601EC /* safari3_override.mm */;
+		name = "safari3_override.mm: 309";
+		rLen = 0;
+		rLoc = 8757;
+		rType = 0;
+		vrLen = 1264;
+		vrLoc = 7537;
+	};
+	B1328DF60E509BF50026ED47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B16435010CF48B1B001601EC /* safari3_override.mm */;
+		name = "safari3_override.mm: 313";
+		rLen = 2;
+		rLoc = 8801;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	B1328DF70E509BF50026ED47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B16435010CF48B1B001601EC /* safari3_override.mm */;
+		name = "safari3_override.mm: 286";
+		rLen = 0;
+		rLoc = 7909;
+		rType = 0;
+		vrLen = 1264;
+		vrLoc = 7537;
 	};
 	B13316CE0B2BA5110026E689 /* WebBackForwardListExt.h */ = {
 		uiCtxt = {
@@ -213,11 +256,19 @@
 	};
 	B16434F10CF489E6001601EC /* mach_override.c */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1094, 10710}}";
-			sepNavSelRange = "{3248, 0}";
-			sepNavVisRange = "{3182, 916}";
+			sepNavIntBoundsRect = "{{0, 0}, {1172, 10149}}";
+			sepNavSelRange = "{634, 45}";
+			sepNavVisRange = "{456, 782}";
 			sepNavVisRect = "{{0, 2632}, {1088, 296}}";
 			sepNavWindowFrame = "{{38, 160}, {1153, 692}}";
+		};
+	};
+	B16434F20CF489E6001601EC /* mach_override.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {935, 2091}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{3666, 1553}";
+			sepNavWindowFrame = "{{62, 102}, {994, 771}}";
 		};
 	};
 	B16435000CF48B1B001601EC /* safari3_override.h */ = {
@@ -230,11 +281,11 @@
 	};
 	B16435010CF48B1B001601EC /* safari3_override.mm */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1136, 2877}}";
-			sepNavSelRange = "{3406, 0}";
-			sepNavVisRange = "{2873, 1733}";
+			sepNavIntBoundsRect = "{{0, 0}, {1108, 5287}}";
+			sepNavSelRange = "{7909, 0}";
+			sepNavVisRange = "{7537, 1264}";
 			sepNavVisRect = "{{0, 1335}, {952, 739}}";
-			sepNavWindowFrame = "{{273, 38}, {997, 812}}";
+			sepNavWindowFrame = "{{517, 90}, {846, 776}}";
 		};
 	};
 	B18525E40A9F2DCE002231EC /* Source Control */ = {
@@ -259,9 +310,9 @@
 	};
 	B18525E80A9F2E05002231EC /* SafariPowerToy.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {938, 4233}}";
-			sepNavSelRange = "{3250, 0}";
-			sepNavVisRange = "{2927, 1432}";
+			sepNavIntBoundsRect = "{{0, 0}, {938, 4301}}";
+			sepNavSelRange = "{3558, 63}";
+			sepNavVisRange = "{2996, 1444}";
 			sepNavVisRect = "{{0, 1737}, {781, 624}}";
 			sepNavWindowFrame = "{{379, 66}, {997, 812}}";
 		};
@@ -276,25 +327,35 @@
 	};
 	B18525EE0A9F2E6A002231EC /* MethodSwizzling.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1035, 663}}";
-			sepNavSelRange = "{790, 0}";
-			sepNavVisRange = "{81, 922}";
+			sepNavIntBoundsRect = "{{0, 0}, {838, 860}}";
+			sepNavSelRange = "{696, 38}";
+			sepNavVisRange = "{747, 108}";
 			sepNavVisRect = "{{0, 0}, {838, 528}}";
 			sepNavWindowFrame = "{{47, 123}, {1094, 743}}";
 		};
 	};
 	B18526670AA133C9002231EC /* char-map.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1108, 619}}";
-			sepNavSelRange = "{424, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {1094, 600}}";
+			sepNavSelRange = "{130, 0}";
+			sepNavVisRange = "{0, 369}";
 			sepNavVisRect = "{{0, 0}, {1108, 619}}";
 			sepNavWindowFrame = "{{61, 139}, {1153, 692}}";
 		};
 	};
+	B18526680AA133C9002231EC /* simp2trad.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1044, 111282}}";
+			sepNavSelRange = "{212257, 0}";
+			sepNavVisRange = "{210615, 1457}";
+			sepNavWindowFrame = "{{275, 81}, {994, 771}}";
+		};
+	};
 	B18526690AA133C9002231EC /* trad2simp.c */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1052, 2261}}";
+			sepNavIntBoundsRect = "{{0, 0}, {369, 112897}}";
 			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 0}";
 			sepNavVisRect = "{{0, 0}, {838, 528}}";
 			sepNavWindowFrame = "{{176, 125}, {883, 601}}";
 		};
@@ -307,24 +368,7 @@
 			sepNavWindowFrame = "{{15, 222}, {777, 524}}";
 		};
 	};
-	B1860EFC0CF5070E007C4FA9 /* safari3_override.mm:89 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = B16435010CF48B1B001601EC /* safari3_override.mm */;
-		functionName = "Font_drawSimpleText()";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 89;
-		location = SafariPowerToy;
-		modificationTime = 219776967.640819;
-		state = 2;
-	};
-	B1860FFE0CF5D6E4007C4FA9 /* safari3_override.mm:151 */ = {
+	B1860FFE0CF5D6E4007C4FA9 /* safari3_override.mm:180 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -336,7 +380,7 @@
 		functionName = "Get_Font_drawText_Addr()";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 151;
+		lineNumber = 180;
 		location = SafariPowerToy;
 		modificationTime = 219776969.862437;
 		state = 0;
@@ -348,7 +392,7 @@
 		argumentStrings = (
 		);
 		autoAttachOnCrash = 1;
-		breakpointsEnabled = 1;
+		breakpointsEnabled = 0;
 		configStateDict = {
 		};
 		customDataFormattersEnabled = 1;
