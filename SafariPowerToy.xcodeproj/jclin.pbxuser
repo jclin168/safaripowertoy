@@ -8,8 +8,8 @@
 			8D5B49AC048680CD000E48DA /* SafariPowerToy */,
 		);
 		breakpoints = (
-			B10AA5780AA3C8210018B0BB /* NSStringExt.m:161 */,
-			B1860FFE0CF5D6E4007C4FA9 /* safari3_override.mm:180 */,
+			B10AA5780AA3C8210018B0BB /* NSStringExt.m:144 */,
+			B1860FFE0CF5D6E4007C4FA9 /* safari3_override.mm:160 */,
 		);
 		codeSenseManager = B18525E50A9F2DCE002231EC /* Code sense */;
 		executables = (
@@ -71,7 +71,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					191,
+					287,
 					20,
 					48,
 					43,
@@ -110,16 +110,18 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 240163816;
-			PBXWorkspaceStateSaveDate = 240163816;
+			PBXPerProjectTemplateStateSaveDate = 241632846;
+			PBXWorkspaceStateSaveDate = 241632846;
 		};
 		perUserProjectItems = {
+			B1128AF50E67085E004DCF14 /* PBXTextBookmark */ = B1128AF50E67085E004DCF14 /* PBXTextBookmark */;
+			B1128AF70E67085E004DCF14 /* PBXTextBookmark */ = B1128AF70E67085E004DCF14 /* PBXTextBookmark */;
+			B1128B910E671558004DCF14 /* PBXTextBookmark */ = B1128B910E671558004DCF14 /* PBXTextBookmark */;
+			B1128BB40E671A27004DCF14 /* PBXBookmark */ = B1128BB40E671A27004DCF14 /* PBXBookmark */;
+			B1128BCE0E671D62004DCF14 /* PBXTextBookmark */ = B1128BCE0E671D62004DCF14 /* PBXTextBookmark */;
+			B1128BCF0E671D62004DCF14 /* PBXTextBookmark */ = B1128BCF0E671D62004DCF14 /* PBXTextBookmark */;
 			B12CE4950E507D800052F2BB /* PBXTextBookmark */ = B12CE4950E507D800052F2BB /* PBXTextBookmark */;
 			B12CE4970E507D800052F2BB /* PBXTextBookmark */ = B12CE4970E507D800052F2BB /* PBXTextBookmark */;
-			B12CE4E80E508DF60052F2BB /* PBXTextBookmark */ = B12CE4E80E508DF60052F2BB /* PBXTextBookmark */;
-			B12CE4E90E508DF60052F2BB /* PBXTextBookmark */ = B12CE4E90E508DF60052F2BB /* PBXTextBookmark */;
-			B1328DF60E509BF50026ED47 /* PBXTextBookmark */ = B1328DF60E509BF50026ED47 /* PBXTextBookmark */;
-			B1328DF70E509BF50026ED47 /* PBXTextBookmark */ = B1328DF70E509BF50026ED47 /* PBXTextBookmark */;
 		};
 		sourceControlManager = B18525E40A9F2DCE002231EC /* Source Control */;
 		userBuildSettings = {
@@ -154,14 +156,14 @@
 	};
 	B10AA4B70AA33F6E0018B0BB /* NSStringExt.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1094, 2924}}";
-			sepNavSelRange = "{2770, 0}";
-			sepNavVisRange = "{2150, 915}";
+			sepNavIntBoundsRect = "{{0, 0}, {1094, 2618}}";
+			sepNavSelRange = "{1917, 0}";
+			sepNavVisRange = "{1425, 844}";
 			sepNavVisRect = "{{0, 0}, {1108, 619}}";
-			sepNavWindowFrame = "{{168, 108}, {1153, 692}}";
+			sepNavWindowFrame = "{{124, 130}, {1153, 692}}";
 		};
 	};
-	B10AA5780AA3C8210018B0BB /* NSStringExt.m:161 */ = {
+	B10AA5780AA3C8210018B0BB /* NSStringExt.m:144 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -173,10 +175,77 @@
 		functionName = "-drawAtPoint_hack:withAttributes:";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 161;
+		lineNumber = 144;
 		location = SafariPowerToy;
-		modificationTime = 219776969.731012;
-		state = 0;
+		modificationTime = 241636754.590081;
+		state = 1;
+	};
+	B1128AE90E6706AA004DCF14 /* simp2trad_x86.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1204, 490433}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 0}";
+		};
+	};
+	B1128AEA0E6706AA004DCF14 /* trad2simp_x86.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1204, 135082}}";
+			sepNavSelRange = "{271022, 0}";
+			sepNavVisRange = "{269871, 1151}";
+			sepNavWindowFrame = "{{66, 97}, {846, 776}}";
+		};
+	};
+	B1128AF50E67085E004DCF14 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B1128AE90E6706AA004DCF14 /* simp2trad_x86.c */;
+		name = "simp2trad_x86.c: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	B1128AF70E67085E004DCF14 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B1128AE90E6706AA004DCF14 /* simp2trad_x86.c */;
+		name = "simp2trad_x86.c: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	B1128B910E671558004DCF14 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "error: invalid conversion from 'const char_map_s*' to 'char_map_s*'";
+		fRef = B18526670AA133C9002231EC /* char-map.h */;
+		rLen = 1;
+		rLoc = 36;
+		rType = 1;
+	};
+	B1128BB40E671A27004DCF14 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = B16435010CF48B1B001601EC /* safari3_override.mm */;
+	};
+	B1128BCE0E671D62004DCF14 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B18526670AA133C9002231EC /* char-map.h */;
+		name = "char-map.h: 37";
+		rLen = 45;
+		rLoc = 936;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	B1128BCF0E671D62004DCF14 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B16435010CF48B1B001601EC /* safari3_override.mm */;
+		name = "safari3_override.mm: 33";
+		rLen = 0;
+		rLoc = 706;
+		rType = 0;
+		vrLen = 1066;
+		vrLoc = 593;
 	};
 	B12CE4950E507D800052F2BB /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -197,46 +266,6 @@
 		rType = 0;
 		vrLen = 0;
 		vrLoc = 0;
-	};
-	B12CE4E80E508DF60052F2BB /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = B16435010CF48B1B001601EC /* safari3_override.mm */;
-		name = "safari3_override.mm: 313";
-		rLen = 2;
-		rLoc = 8801;
-		rType = 0;
-		vrLen = 0;
-		vrLoc = 0;
-	};
-	B12CE4E90E508DF60052F2BB /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = B16435010CF48B1B001601EC /* safari3_override.mm */;
-		name = "safari3_override.mm: 309";
-		rLen = 0;
-		rLoc = 8757;
-		rType = 0;
-		vrLen = 1264;
-		vrLoc = 7537;
-	};
-	B1328DF60E509BF50026ED47 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = B16435010CF48B1B001601EC /* safari3_override.mm */;
-		name = "safari3_override.mm: 313";
-		rLen = 2;
-		rLoc = 8801;
-		rType = 0;
-		vrLen = 0;
-		vrLoc = 0;
-	};
-	B1328DF70E509BF50026ED47 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = B16435010CF48B1B001601EC /* safari3_override.mm */;
-		name = "safari3_override.mm: 286";
-		rLen = 0;
-		rLoc = 7909;
-		rType = 0;
-		vrLen = 1264;
-		vrLoc = 7537;
 	};
 	B13316CE0B2BA5110026E689 /* WebBackForwardListExt.h */ = {
 		uiCtxt = {
@@ -281,9 +310,9 @@
 	};
 	B16435010CF48B1B001601EC /* safari3_override.mm */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1108, 5287}}";
-			sepNavSelRange = "{7909, 0}";
-			sepNavVisRange = "{7537, 1264}";
+			sepNavIntBoundsRect = "{{0, 0}, {948, 5270}}";
+			sepNavSelRange = "{706, 0}";
+			sepNavVisRange = "{593, 1066}";
 			sepNavVisRect = "{{0, 1335}, {952, 739}}";
 			sepNavWindowFrame = "{{517, 90}, {846, 776}}";
 		};
@@ -336,18 +365,18 @@
 	};
 	B18526670AA133C9002231EC /* char-map.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1094, 600}}";
-			sepNavSelRange = "{130, 0}";
-			sepNavVisRange = "{0, 369}";
+			sepNavIntBoundsRect = "{{0, 0}, {465, 1394}}";
+			sepNavSelRange = "{936, 45}";
+			sepNavVisRange = "{0, 0}";
 			sepNavVisRect = "{{0, 0}, {1108, 619}}";
-			sepNavWindowFrame = "{{61, 139}, {1153, 692}}";
+			sepNavWindowFrame = "{{167, 169}, {851, 628}}";
 		};
 	};
 	B18526680AA133C9002231EC /* simp2trad.c */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1044, 111282}}";
-			sepNavSelRange = "{212257, 0}";
-			sepNavVisRange = "{210615, 1457}";
+			sepNavIntBoundsRect = "{{0, 0}, {1044, 513672}}";
+			sepNavSelRange = "{1206920, 8}";
+			sepNavVisRange = "{1206574, 1071}";
 			sepNavWindowFrame = "{{275, 81}, {994, 771}}";
 		};
 	};
@@ -368,7 +397,7 @@
 			sepNavWindowFrame = "{{15, 222}, {777, 524}}";
 		};
 	};
-	B1860FFE0CF5D6E4007C4FA9 /* safari3_override.mm:180 */ = {
+	B1860FFE0CF5D6E4007C4FA9 /* safari3_override.mm:160 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -380,10 +409,10 @@
 		functionName = "Get_Font_drawText_Addr()";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 180;
+		lineNumber = 160;
 		location = SafariPowerToy;
-		modificationTime = 219776969.862437;
-		state = 0;
+		modificationTime = 241636754.616874;
+		state = 1;
 	};
 	B1AFE2550AA13ED7003E6190 /* Executable */ = {
 		isa = PBXExecutable;
