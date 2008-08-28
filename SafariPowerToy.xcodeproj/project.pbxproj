@@ -12,12 +12,8 @@
 		B10AA4B90AA33F6E0018B0BB /* NSStringExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B10AA4B70AA33F6E0018B0BB /* NSStringExt.m */; };
 		B11CBF7A0E675C1300CE0AEA /* simp2trad.c in Sources */ = {isa = PBXBuildFile; fileRef = B11CBF790E675C1300CE0AEA /* simp2trad.c */; };
 		B11CBF7D0E675C4900CE0AEA /* trad2simp.c in Sources */ = {isa = PBXBuildFile; fileRef = B11CBF7C0E675C4900CE0AEA /* trad2simp.c */; };
-		B13316D00B2BA5110026E689 /* WebBackForwardListExt.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B13316CE0B2BA5110026E689 /* WebBackForwardListExt.h */; };
-		B13316D10B2BA5110026E689 /* WebBackForwardListExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B13316CF0B2BA5110026E689 /* WebBackForwardListExt.m */; };
 		B13A0A140AA32AF40007410E /* SafariPowerToy.nib in Resources */ = {isa = PBXBuildFile; fileRef = B13A0A130AA32AF40007410E /* SafariPowerToy.nib */; };
 		B16434F30CF489E6001601EC /* mach_override.c in Sources */ = {isa = PBXBuildFile; fileRef = B16434F10CF489E6001601EC /* mach_override.c */; };
-		B16434F40CF489E6001601EC /* mach_override.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B16434F20CF489E6001601EC /* mach_override.h */; };
-		B16435020CF48B1B001601EC /* safari3_override.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B16435000CF48B1B001601EC /* safari3_override.h */; };
 		B16435030CF48B1B001601EC /* safari3_override.mm in Sources */ = {isa = PBXBuildFile; fileRef = B16435010CF48B1B001601EC /* safari3_override.mm */; };
 		B18525E90A9F2E05002231EC /* SafariPowerToy.m in Sources */ = {isa = PBXBuildFile; fileRef = B18525E80A9F2E05002231EC /* SafariPowerToy.m */; };
 		B18525EF0A9F2E6A002231EC /* MethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = B18525EE0A9F2E6A002231EC /* MethodSwizzling.m */; };
@@ -26,8 +22,6 @@
 		B1AFE2210AA1394C003E6190 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D5B49B7048680CD000E48DA /* Info.plist */; };
 		B1AFE37D0AA1A118003E6190 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1AFE37C0AA1A118003E6190 /* WebKit.framework */; };
 		B1AFE52B0AA1DFD8003E6190 /* WebTextRendererExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AFE5290AA1DFD8003E6190 /* WebTextRendererExt.m */; };
-		B1B09C450AC2C24E0078CE68 /* NSURLRequestX.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B1B09C430AC2C24E0078CE68 /* NSURLRequestX.h */; };
-		B1B09C460AC2C24E0078CE68 /* NSURLRequestX.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B09C440AC2C24E0078CE68 /* NSURLRequestX.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,10 +33,6 @@
 			files = (
 				B1AFE2160AA138F8003E6190 /* SafariPowerToy.bundle in CopyFiles */,
 				B185268B0AA13507002231EC /* Info in CopyFiles */,
-				B1B09C450AC2C24E0078CE68 /* NSURLRequestX.h in CopyFiles */,
-				B13316D00B2BA5110026E689 /* WebBackForwardListExt.h in CopyFiles */,
-				B16434F40CF489E6001601EC /* mach_override.h in CopyFiles */,
-				B16435020CF48B1B001601EC /* safari3_override.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,13 +50,10 @@
 		B10AA4B70AA33F6E0018B0BB /* NSStringExt.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = NSStringExt.m; path = src/NSStringExt.m; sourceTree = "<group>"; };
 		B11CBF790E675C1300CE0AEA /* simp2trad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = simp2trad.c; sourceTree = "<group>"; };
 		B11CBF7C0E675C4900CE0AEA /* trad2simp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = trad2simp.c; sourceTree = "<group>"; };
-		B13316CE0B2BA5110026E689 /* WebBackForwardListExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebBackForwardListExt.h; sourceTree = "<group>"; };
-		B13316CF0B2BA5110026E689 /* WebBackForwardListExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebBackForwardListExt.m; sourceTree = "<group>"; };
 		B13A0A130AA32AF40007410E /* SafariPowerToy.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = SafariPowerToy.nib; path = src/SafariPowerToy.nib; sourceTree = "<group>"; };
 		B16434F10CF489E6001601EC /* mach_override.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = mach_override.c; sourceTree = "<group>"; };
-		B16434F20CF489E6001601EC /* mach_override.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = mach_override.h; sourceTree = "<group>"; };
-		B16435000CF48B1B001601EC /* safari3_override.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = safari3_override.h; sourceTree = "<group>"; };
 		B16435010CF48B1B001601EC /* safari3_override.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = safari3_override.mm; sourceTree = "<group>"; };
+		B1792E0A0E6762DC0093776F /* mach_override.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mach_override.h; sourceTree = "<group>"; };
 		B18525E70A9F2E05002231EC /* SafariPowerToy.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SafariPowerToy.h; path = src/SafariPowerToy.h; sourceTree = "<group>"; };
 		B18525E80A9F2E05002231EC /* SafariPowerToy.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = SafariPowerToy.m; path = src/SafariPowerToy.m; sourceTree = "<group>"; };
 		B18525ED0A9F2E6A002231EC /* MethodSwizzling.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = MethodSwizzling.h; path = src/MethodSwizzling.h; sourceTree = "<group>"; };
@@ -77,8 +64,6 @@
 		B1AFE37C0AA1A118003E6190 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
 		B1AFE5280AA1DFD8003E6190 /* WebTextRendererExt.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = WebTextRendererExt.h; path = src/WebTextRendererExt.h; sourceTree = "<group>"; };
 		B1AFE5290AA1DFD8003E6190 /* WebTextRendererExt.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = WebTextRendererExt.m; path = src/WebTextRendererExt.m; sourceTree = "<group>"; };
-		B1B09C430AC2C24E0078CE68 /* NSURLRequestX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLRequestX.h; sourceTree = "<group>"; };
-		B1B09C440AC2C24E0078CE68 /* NSURLRequestX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLRequestX.m; sourceTree = "<group>"; };
 		D2F7E65807B2D6F200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
@@ -130,6 +115,7 @@
 		08FB77AFFE84173DC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B1792E0A0E6762DC0093776F /* mach_override.h */,
 				B10AA4B60AA33F6E0018B0BB /* NSStringExt.h */,
 				B10AA4B70AA33F6E0018B0BB /* NSStringExt.m */,
 				B1AFE5280AA1DFD8003E6190 /* WebTextRendererExt.h */,
@@ -140,14 +126,8 @@
 				B18525EE0A9F2E6A002231EC /* MethodSwizzling.m */,
 				B18525E70A9F2E05002231EC /* SafariPowerToy.h */,
 				B18525E80A9F2E05002231EC /* SafariPowerToy.m */,
-				B16435000CF48B1B001601EC /* safari3_override.h */,
 				B16435010CF48B1B001601EC /* safari3_override.mm */,
 				B16434F10CF489E6001601EC /* mach_override.c */,
-				B16434F20CF489E6001601EC /* mach_override.h */,
-				B13316CE0B2BA5110026E689 /* WebBackForwardListExt.h */,
-				B13316CF0B2BA5110026E689 /* WebBackForwardListExt.m */,
-				B1B09C430AC2C24E0078CE68 /* NSURLRequestX.h */,
-				B1B09C440AC2C24E0078CE68 /* NSURLRequestX.m */,
 				B11CBF790E675C1300CE0AEA /* simp2trad.c */,
 				B11CBF7C0E675C4900CE0AEA /* trad2simp.c */,
 			);
@@ -250,8 +230,6 @@
 				B18525EF0A9F2E6A002231EC /* MethodSwizzling.m in Sources */,
 				B1AFE52B0AA1DFD8003E6190 /* WebTextRendererExt.m in Sources */,
 				B10AA4B90AA33F6E0018B0BB /* NSStringExt.m in Sources */,
-				B1B09C460AC2C24E0078CE68 /* NSURLRequestX.m in Sources */,
-				B13316D10B2BA5110026E689 /* WebBackForwardListExt.m in Sources */,
 				B16434F30CF489E6001601EC /* mach_override.c in Sources */,
 				B16435030CF48B1B001601EC /* safari3_override.mm in Sources */,
 				B11CBF7A0E675C1300CE0AEA /* simp2trad.c in Sources */,
