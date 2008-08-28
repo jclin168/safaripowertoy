@@ -10,8 +10,8 @@
 		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
 		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
 		B10AA4B90AA33F6E0018B0BB /* NSStringExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B10AA4B70AA33F6E0018B0BB /* NSStringExt.m */; };
-		B1128AEB0E6706AA004DCF14 /* simp2trad_x86.c in Sources */ = {isa = PBXBuildFile; fileRef = B1128AE90E6706AA004DCF14 /* simp2trad_x86.c */; };
-		B1128AEC0E6706AA004DCF14 /* trad2simp_x86.c in Sources */ = {isa = PBXBuildFile; fileRef = B1128AEA0E6706AA004DCF14 /* trad2simp_x86.c */; };
+		B11CBF7A0E675C1300CE0AEA /* simp2trad.c in Sources */ = {isa = PBXBuildFile; fileRef = B11CBF790E675C1300CE0AEA /* simp2trad.c */; };
+		B11CBF7D0E675C4900CE0AEA /* trad2simp.c in Sources */ = {isa = PBXBuildFile; fileRef = B11CBF7C0E675C4900CE0AEA /* trad2simp.c */; };
 		B13316D00B2BA5110026E689 /* WebBackForwardListExt.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B13316CE0B2BA5110026E689 /* WebBackForwardListExt.h */; };
 		B13316D10B2BA5110026E689 /* WebBackForwardListExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B13316CF0B2BA5110026E689 /* WebBackForwardListExt.m */; };
 		B13A0A140AA32AF40007410E /* SafariPowerToy.nib in Resources */ = {isa = PBXBuildFile; fileRef = B13A0A130AA32AF40007410E /* SafariPowerToy.nib */; };
@@ -21,8 +21,6 @@
 		B16435030CF48B1B001601EC /* safari3_override.mm in Sources */ = {isa = PBXBuildFile; fileRef = B16435010CF48B1B001601EC /* safari3_override.mm */; };
 		B18525E90A9F2E05002231EC /* SafariPowerToy.m in Sources */ = {isa = PBXBuildFile; fileRef = B18525E80A9F2E05002231EC /* SafariPowerToy.m */; };
 		B18525EF0A9F2E6A002231EC /* MethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = B18525EE0A9F2E6A002231EC /* MethodSwizzling.m */; };
-		B185266A0AA133C9002231EC /* simp2trad.c in Sources */ = {isa = PBXBuildFile; fileRef = B18526680AA133C9002231EC /* simp2trad.c */; };
-		B185266B0AA133C9002231EC /* trad2simp.c in Sources */ = {isa = PBXBuildFile; fileRef = B18526690AA133C9002231EC /* trad2simp.c */; };
 		B185268B0AA13507002231EC /* Info in CopyFiles */ = {isa = PBXBuildFile; fileRef = B185268A0AA13507002231EC /* Info */; };
 		B1AFE2160AA138F8003E6190 /* SafariPowerToy.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8D5B49B6048680CD000E48DA /* SafariPowerToy.bundle */; };
 		B1AFE2210AA1394C003E6190 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D5B49B7048680CD000E48DA /* Info.plist */; };
@@ -60,8 +58,8 @@
 		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B10AA4B60AA33F6E0018B0BB /* NSStringExt.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = NSStringExt.h; path = src/NSStringExt.h; sourceTree = "<group>"; };
 		B10AA4B70AA33F6E0018B0BB /* NSStringExt.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = NSStringExt.m; path = src/NSStringExt.m; sourceTree = "<group>"; };
-		B1128AE90E6706AA004DCF14 /* simp2trad_x86.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = simp2trad_x86.c; path = "char-map/simp2trad_x86.c"; sourceTree = "<group>"; };
-		B1128AEA0E6706AA004DCF14 /* trad2simp_x86.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = trad2simp_x86.c; path = "char-map/trad2simp_x86.c"; sourceTree = "<group>"; };
+		B11CBF790E675C1300CE0AEA /* simp2trad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = simp2trad.c; sourceTree = "<group>"; };
+		B11CBF7C0E675C4900CE0AEA /* trad2simp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = trad2simp.c; sourceTree = "<group>"; };
 		B13316CE0B2BA5110026E689 /* WebBackForwardListExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebBackForwardListExt.h; sourceTree = "<group>"; };
 		B13316CF0B2BA5110026E689 /* WebBackForwardListExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebBackForwardListExt.m; sourceTree = "<group>"; };
 		B13A0A130AA32AF40007410E /* SafariPowerToy.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = SafariPowerToy.nib; path = src/SafariPowerToy.nib; sourceTree = "<group>"; };
@@ -74,8 +72,6 @@
 		B18525ED0A9F2E6A002231EC /* MethodSwizzling.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = MethodSwizzling.h; path = src/MethodSwizzling.h; sourceTree = "<group>"; };
 		B18525EE0A9F2E6A002231EC /* MethodSwizzling.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = MethodSwizzling.m; path = src/MethodSwizzling.m; sourceTree = "<group>"; };
 		B18526670AA133C9002231EC /* char-map.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = "char-map.h"; path = "char-map/char-map.h"; sourceTree = "<group>"; };
-		B18526680AA133C9002231EC /* simp2trad.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = simp2trad.c; path = "char-map/simp2trad.c"; sourceTree = "<group>"; };
-		B18526690AA133C9002231EC /* trad2simp.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = trad2simp.c; path = "char-map/trad2simp.c"; sourceTree = "<group>"; };
 		B185268A0AA13507002231EC /* Info */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; path = Info; sourceTree = "<group>"; };
 		B1AFE2EF0AA19A71003E6190 /* WebCoreTextRenderer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = WebCoreTextRenderer.h; path = src/WebCoreTextRenderer.h; sourceTree = "<group>"; };
 		B1AFE37C0AA1A118003E6190 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
@@ -134,16 +130,12 @@
 		08FB77AFFE84173DC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				B1128AE90E6706AA004DCF14 /* simp2trad_x86.c */,
-				B1128AEA0E6706AA004DCF14 /* trad2simp_x86.c */,
 				B10AA4B60AA33F6E0018B0BB /* NSStringExt.h */,
 				B10AA4B70AA33F6E0018B0BB /* NSStringExt.m */,
 				B1AFE5280AA1DFD8003E6190 /* WebTextRendererExt.h */,
 				B1AFE5290AA1DFD8003E6190 /* WebTextRendererExt.m */,
 				B1AFE2EF0AA19A71003E6190 /* WebCoreTextRenderer.h */,
 				B18526670AA133C9002231EC /* char-map.h */,
-				B18526680AA133C9002231EC /* simp2trad.c */,
-				B18526690AA133C9002231EC /* trad2simp.c */,
 				B18525ED0A9F2E6A002231EC /* MethodSwizzling.h */,
 				B18525EE0A9F2E6A002231EC /* MethodSwizzling.m */,
 				B18525E70A9F2E05002231EC /* SafariPowerToy.h */,
@@ -156,6 +148,8 @@
 				B13316CF0B2BA5110026E689 /* WebBackForwardListExt.m */,
 				B1B09C430AC2C24E0078CE68 /* NSURLRequestX.h */,
 				B1B09C440AC2C24E0078CE68 /* NSURLRequestX.m */,
+				B11CBF790E675C1300CE0AEA /* simp2trad.c */,
+				B11CBF7C0E675C4900CE0AEA /* trad2simp.c */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -254,16 +248,14 @@
 			files = (
 				B18525E90A9F2E05002231EC /* SafariPowerToy.m in Sources */,
 				B18525EF0A9F2E6A002231EC /* MethodSwizzling.m in Sources */,
-				B185266A0AA133C9002231EC /* simp2trad.c in Sources */,
-				B185266B0AA133C9002231EC /* trad2simp.c in Sources */,
 				B1AFE52B0AA1DFD8003E6190 /* WebTextRendererExt.m in Sources */,
 				B10AA4B90AA33F6E0018B0BB /* NSStringExt.m in Sources */,
 				B1B09C460AC2C24E0078CE68 /* NSURLRequestX.m in Sources */,
 				B13316D10B2BA5110026E689 /* WebBackForwardListExt.m in Sources */,
 				B16434F30CF489E6001601EC /* mach_override.c in Sources */,
 				B16435030CF48B1B001601EC /* safari3_override.mm in Sources */,
-				B1128AEB0E6706AA004DCF14 /* simp2trad_x86.c in Sources */,
-				B1128AEC0E6706AA004DCF14 /* trad2simp_x86.c in Sources */,
+				B11CBF7A0E675C1300CE0AEA /* simp2trad.c in Sources */,
+				B11CBF7D0E675C4900CE0AEA /* trad2simp.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +297,10 @@
 		1DEB913C08733D840010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH)";
+				ARCHS = (
+					ppc,
+					"$(NATIVE_ARCH)",
+				);
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -334,7 +329,19 @@
 		1DEB914008733D840010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
+				GCC_MODEL_TUNING = "";
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_UNROLL_LOOPS = YES;
 				GCC_USE_GCC3_PFE_SUPPORT = YES;
+				GCC_USE_REGISTER_FUNCTION_CALLS = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
