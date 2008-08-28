@@ -31,33 +31,27 @@ BOOL ConvertNSString( NSString * aString, NSString ** dst )
 		return FALSE;
 	if( nil == aString || nil == dst )
 		return FALSE;
-	int i, nLen = [aString length];
+	int nLen = [aString length];
 	
 	unichar buf[nLen];
 	[aString getCharacters:buf];
 	
 	const struct char_map_s * ch_map = NULL;
-	char ch[2];
-	for( i = 0; i < nLen; i++ )
+	unichar *buf_ptr = buf;
+	int remain_len = nLen*sizeof(unichar);
+	unsigned int ret_len;
+	while(remain_len > 0)
 	{
-		if( buf[i] <= 0xff )
-			continue;
-#if defined(__ppc__) || defined(__POWERPC__)
-		if( glyph_status == eTraditional )
-			ch_map = simp2trad_lookup( (char *)&buf[i], 2 );
-		else
-			ch_map = trad2simp_lookup( (char *)&buf[i], 2 );
-#endif
-#if defined(__i386__)
-		ch[0] = (buf[i]>>8) & 0xff;
-		ch[1] = buf[i] & 0xff;
-		if( eTraditional == glyph_status )
-			ch_map = simp2trad_lookup( (char *)ch, 2 );
-		else
-			ch_map = trad2simp_lookup( (char *)ch, 2 );
-#endif
-		if( ch_map != NULL )
-			break;
+		if( *buf_ptr > 0xff ) {
+			if( eTraditional == glyph_status )
+				ch_map = simp2trad_lookup_all((char *)buf_ptr, &ret_len, remain_len);
+			else
+				ch_map = trad2simp_lookup_all((char *)buf_ptr, &ret_len, remain_len);
+			if( ch_map != NULL )
+				break;
+		}
+		remain_len-=2;
+		buf_ptr++;
 	}
 	
 	if( ch_map == NULL )
@@ -66,34 +60,23 @@ BOOL ConvertNSString( NSString * aString, NSString ** dst )
 	while( TRUE )
 	{
 		if( ch_map != NULL ) {
-#if defined(__ppc__) || defined(__POWERPC__)
-			const UChar * ch = (UChar *)(ch_map->dst);
-			buf[i] = *ch;
-#endif
-#if defined(__i386__)
-			buf[i] = (((unichar)ch_map->dst[0]) << 8) | (ch_map->dst[1] & 0xff);
-#endif
+			memcpy((void*)buf_ptr, (void*)(ch_map->dst), ret_len);
+			remain_len -= ret_len;
+			buf_ptr += (ret_len>>1);
+		}
+		else {
+			remain_len -= 2;
+			buf_ptr ++;
 		}
 		ch_map = NULL;
-		i++;
-		if( i >= nLen )
+		if(remain_len < 0 || *buf_ptr == 0x00 )
 			break;
-		if( buf[i] <= 0xff )
+		if( *buf_ptr <= 0xff )
 			continue;
-#if defined(__ppc__) || defined(__POWERPC__)
 		if( eTraditional == glyph_status )
-			ch_map = simp2trad_lookup( (char *)&buf[i], 2 );
+			ch_map = simp2trad_lookup_all((char *)buf_ptr, &ret_len, remain_len);
 		else
-			ch_map = trad2simp_lookup( (char *)&buf[i], 2 );		
-#endif
-#if defined(__i386__)
-		ch[0] = (buf[i]>>8) & 0xff;
-		ch[1] = buf[i] & 0xff;
-		if( eTraditional == glyph_status )
-			ch_map = simp2trad_lookup( (char *)ch, 2 );
-		else
-			ch_map = trad2simp_lookup( (char *)ch, 2 );
-#endif
+			ch_map = trad2simp_lookup_all((char *)buf_ptr, &ret_len, remain_len);
 	}
 	
 	*dst = [[[NSString alloc] initWithCharacters:buf length:nLen] autorelease];

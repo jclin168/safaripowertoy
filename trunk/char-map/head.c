@@ -1,5 +1,4 @@
 %compare-lengths
-%compare-strncmp
 %struct-type
 %define slot-name src
 %{

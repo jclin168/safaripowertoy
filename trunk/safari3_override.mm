@@ -39,29 +39,20 @@ BOOL ConvertUChar( UChar * buf, int nLen )
 {
 	enum Glyph_E glyph_status = [SafariPowerToy getForGlyph_SafariPowerToy];
 	const struct char_map_s * ch_map = NULL;
-	int i;
-	char ch[2];
-	for( i = 0; i < nLen; i++ )
+	unsigned int ret_len =0;
+	unsigned remain_len = nLen * sizeof(UChar);
+	while(remain_len>0)
 	{
-		if( buf[i] <= 0xff )
-			continue;
-#if defined(__ppc__) || defined(__POWERPC__)
-		if( eTraditional == glyph_status )
-			ch_map = simp2trad_lookup( (char *)&buf[i], 2 );
-		else
-			ch_map = trad2simp_lookup( (char *)&buf[i], 2 );
-#endif
-		
-#if defined(__i386__)
-		ch[0] = (buf[i]>>8) & 0xff;
-		ch[1] = buf[i] & 0xff;
-		if( eTraditional == glyph_status )
-			ch_map = simp2trad_lookup( (char *)ch, 2 );
-		else
-			ch_map = trad2simp_lookup( (char *)ch, 2 );
-#endif
-		if( ch_map != NULL )
-			break;
+		if( *buf > 0xff ) {
+			if( eTraditional == glyph_status )
+				ch_map = simp2trad_lookup_all((char *)buf, &ret_len, remain_len);
+			else
+				ch_map = trad2simp_lookup_all((char *)buf, &ret_len, remain_len);
+			if( ch_map != NULL )
+				break;
+		}
+		remain_len -= 2;
+		buf++;
 	}
 	
 	if( ch_map == NULL )
@@ -70,34 +61,23 @@ BOOL ConvertUChar( UChar * buf, int nLen )
 	while( TRUE )
 	{
 		if( ch_map != NULL ) {
-#if defined(__ppc__) || defined(__POWERPC__)
-			const UChar * ch = (UChar *)(ch_map->dst);
-			buf[i] = *ch;
-#endif
-#if defined(__i386__)
-			buf[i] = (((UChar)ch_map->dst[0]) << 8) | (ch_map->dst[1] & 0xff);
-#endif
+			memcpy((void*)buf, (void*)(ch_map->dst), ret_len);
+			remain_len -= ret_len;
+			buf += (ret_len>>1);
+		}
+		else {
+			remain_len -= 2;
+			buf ++;
 		}
 		ch_map = NULL;
-		i++;
-		if( i >= nLen )
+		if(remain_len<=0 || *buf == 0x0)
 			break;
-		if( buf[i] <= 0xff )
+		if( *buf <= 0xff )
 			continue;
-#if defined(__ppc__) || defined(__POWERPC__)
 		if( eTraditional == glyph_status )
-			ch_map = simp2trad_lookup( (char *)&buf[i], 2 );
+			ch_map = simp2trad_lookup_all((char *)buf, &ret_len, remain_len);
 		else
-			ch_map = trad2simp_lookup( (char *)&buf[i], 2 );
-#endif
-#if defined(__i386__)
-		ch[0] = (buf[i]>>8) & 0xff;
-		ch[1] = buf[i] & 0xff;
-		if( eTraditional == glyph_status )
-			ch_map = simp2trad_lookup( (char *)ch, 2 );
-		else
-			ch_map = trad2simp_lookup( (char *)ch, 2 );
-#endif
+			ch_map = trad2simp_lookup_all((char *)buf, &ret_len, remain_len);
 	}
 	return TRUE;
 }
