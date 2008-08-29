@@ -42,7 +42,7 @@ BOOL ConvertNSString( NSString * aString, NSString ** dst )
 	unsigned int ret_len;
 	while(remain_len > 0)
 	{
-		if( *buf_ptr > 0xff ) {
+		if( *buf_ptr > 0x3200 ) {
 			if( eTraditional == glyph_status )
 				ch_map = simp2trad_lookup_all((char *)buf_ptr, &ret_len, remain_len);
 			else
@@ -71,7 +71,7 @@ BOOL ConvertNSString( NSString * aString, NSString ** dst )
 		ch_map = NULL;
 		if(remain_len < 0 || *buf_ptr == 0x00 )
 			break;
-		if( *buf_ptr <= 0xff )
+		if( *buf_ptr <= 0x3200 )
 			continue;
 		if( eTraditional == glyph_status )
 			ch_map = simp2trad_lookup_all((char *)buf_ptr, &ret_len, remain_len);
