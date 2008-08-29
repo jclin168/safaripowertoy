@@ -43,7 +43,7 @@ BOOL ConvertUChar( UChar * buf, int nLen )
 	unsigned remain_len = nLen * sizeof(UChar);
 	while(remain_len>0)
 	{
-		if( *buf > 0xff ) {
+		if( *buf > 0x3200 ) {
 			if( eTraditional == glyph_status )
 				ch_map = simp2trad_lookup_all((char *)buf, &ret_len, remain_len);
 			else
@@ -72,7 +72,7 @@ BOOL ConvertUChar( UChar * buf, int nLen )
 		ch_map = NULL;
 		if(remain_len<=0 || *buf == 0x0)
 			break;
-		if( *buf <= 0xff )
+		if( *buf <= 0x3200 )
 			continue;
 		if( eTraditional == glyph_status )
 			ch_map = simp2trad_lookup_all((char *)buf, &ret_len, remain_len);
