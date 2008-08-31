@@ -1,6 +1,20 @@
 #labels Usage
 = Manual/手冊 =
 
+== 10.5 Leopard / Intel x86 build ==
+=== 安裝步驟 ===
+   # 結束 Safari
+   # 開啟 SafariPowerToy-xxx.pkg
+   # 依照步驟安裝
+   # 重新執行 Safari
+=== 移除步驟 ===
+   # 結束 Safari
+   # 打開終端機程式, 打入 sudo rm -rf /Library/InputManagers/SafariPowerToy
+   # 若無法移除或是有錯誤訊息，可能是其他程式還在佔用，像是 Dashboard
+   # sudo rm /Library/InputManagers/SafariPowerToy/Info.plist
+   # 重新開機或登出
+   # sudo rm -rf /Library/InputManagers/SafariPowerToy
+
 == 10.4 Tiger/老虎 ==
 === Installation/安裝 ===
    # Quit Safari or Shiira
